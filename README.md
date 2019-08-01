@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # toyApp
 
 > just a toy
@@ -54,3 +55,6 @@ __0.1.0__
 Copyright (c) 2018
 
 Licensed under the [MIT license](LICENSE).
+=======
+# press-right-here
+>>>>>>> 52ac044e517586abc2592b14506c36ce7ccb4aed
