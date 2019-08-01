@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-#ignore npm modules
-/node_modules/
-
 # Logs
 logs
 *.log
@@ -114,8 +110,3 @@ $RECYCLE.BIN/
 # Others
 lib/
 data/
-=======
-/Build/*
-
->>>>>>> 52ac044e517586abc2592b14506c36ce7ccb4aed
-

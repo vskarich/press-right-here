@@ -8,8 +8,8 @@
     "feathers"
   ],
   "author": {
-    "name": "galen",
-    "email": "gg9g9gg@gmail.com"
+    "name": "Veljko Skarich",
+    "email": "veljko@swarm.enterprises"
   },
   "contributors": [],
   "bugs": {},
@@ -19,15 +19,15 @@
     "config": "config/"
   },
   "engines": {
-    "node": "^11.0.0",
+    "node": "^10.0.0",
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "test": "npm run eslint && NODE_ENV= npm run mocha",
+    "test": "npm run eslint && NODE_ENV= npm run jest",
     "eslint": "eslint lib/. test/. --config .eslintrc.json",
     "dev": "nodemon lib/",
     "start": "node lib/",
-    "mocha": "mocha test/ --recursive --exit"
+    "jest": "jest"
   },
   "dependencies": {
     "@feathersjs/configuration": "^2.0.6",
@@ -37,19 +37,13 @@
     "@feathersjs/socketio": "^3.2.9",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
-    "feathers-nedb": "^4.0.2",
-    "feathers-sequelize": "^6.0.1",
     "helmet": "^3.20.0",
-    "nedb": "^1.8.0",
-    "pg": "^7.12.0",
-    "pg-hstore": "^2.3.3",
-    "sequelize": "^4.44.2",
     "serve-favicon": "^2.5.0",
     "winston": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "mocha": "^5.2.0",
+    "jest": "^24.8.0",
     "nodemon": "^1.19.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
