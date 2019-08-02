@@ -1,0 +1,32 @@
+AWSConfigurationTemplateVersion: 1.1.0.0
+EnvironmentTier:
+  Name: WebServer
+  Type: Standard
+OptionSettings:
+  aws:autoscaling:launchconfiguration:
+    EC2KeyName: aws-eb-chainrenter
+    IamInstanceProfile: aws-elasticbeanstalk-ec2-role
+    InstanceType: t2.micro
+  aws:autoscaling:updatepolicy:rollingupdate:
+    RollingUpdateEnabled: true
+    RollingUpdateType: Health
+  aws:elasticbeanstalk:command:
+    BatchSize: '30'
+    BatchSizeType: Percentage
+  aws:elasticbeanstalk:container:nodejs:
+    GzipCompression: false
+    NodeCommand: npm start
+  aws:elasticbeanstalk:environment:
+    ServiceRole: aws-elasticbeanstalk-service-role
+  aws:elasticbeanstalk:healthreporting:system:
+    SystemType: enhanced
+  aws:elb:listener:80:
+    InstancePort: 3030
+    ListenerProtocol: HTTP
+  aws:elb:loadbalancer:
+    CrossZone: true
+  aws:elb:policies:
+    ConnectionDrainingEnabled: true
+Platform:
+  PlatformArn: arn:aws:elasticbeanstalk:us-west-2::platform/Node.js running on 64bit
+    Amazon Linux/4.9.2
