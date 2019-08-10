@@ -1,6 +1,6 @@
 {
-  "name": "toyApp",
-  "description": "just a toy",
+  "name": "chainrenter",
+  "description": "Blockchain rental service",
   "version": "0.0.0",
   "homepage": "",
   "main": "lib",
@@ -9,7 +9,7 @@
   ],
   "author": {
     "name": "Veljko Skarich",
-    "email": "veljko@swarm.enterprises"
+    "email": "veljko.skarich@gmail.com"
   },
   "contributors": [],
   "bugs": {},
@@ -37,7 +37,11 @@
     "@feathersjs/socketio": "^3.2.9",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
+    "feathers-sequelize": "^6.0.1",
     "helmet": "^3.20.0",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^4.44.2",
     "serve-favicon": "^2.5.0",
     "winston": "^3.2.1"
   },
