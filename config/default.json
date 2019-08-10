@@ -6,5 +6,5 @@
     "default": 10,
     "max": 50
   },
-  "postgres": "postgres://chainrenter:oTfBXahCjZM).vjh2kQ#r4L2JJzp2L@chainrenter-db-3.cgixvzkipt60.us-west-2.rds.amazonaws.com:5432/dev"
+  "postgresDBName": "dev"
 }
